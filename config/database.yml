@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: photography
+  pool: 5
+  username: postgres
+  password: india999
