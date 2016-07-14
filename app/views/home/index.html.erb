@@ -1,15 +1,21 @@
 <div class="container-fluid">  
-  <div class="page-header">
+<!--   <div class="page-header">
     <h1 align="center" style="margin-top:5%;color:#000;">Welcome to Photography</h1>
+  </div> -->
+  <div class = "row logo_position"> 
+    <div class="col-md-10">
+    <%= image_tag "http://www.mintandpeachphotography.com/wp-content/uploads/2016/01/MP.png", :class=> "home_image img-responsive center-block" %>
   </div>
-  <div style="margin-bottom:5%;">
-  <%= image_tag "http://www.mintandpeachphotography.com/wp-content/uploads/2016/01/MP.png", :class=> "home_image img-responsive center-block" %>
-</div>
+  <div class="col-md-2 address">
+    <p> Prashanth <br> Vishwapriya layout <br> Begur <br> Bangalore <br> 560068 <br> ph: 9916589047</p>
+  </div>
+  </div>
+
   <div class='form-group col-md-3'> </div>
     <ul class="nav nav-tabs home_url">
-      <li role="presentation" class="active"><a href="#replace_div" class="li_color">Home</a></li>
-      <li role="presentation"><a href="/home/replace?value=pro" data-remote="true" class="li_color">Profile</a></li>
-      <li role="presentation"><a href="/home/replace?value=pic" data-remote="true" class="li_color">Comments</a></li>
+      <li role="presentation" class="active"><a href="#replace_div" class="li_color" onclick="change_active();">Home</a></li>
+      <li role="presentation"><a href="/home/replace?value=pro" data-remote="true" class="li_color" onclick="change_active();">Profile</a></li>
+      <li role="presentation"><a href="/home/replace?value=pic" data-remote="true" class="li_color" onclick="change_active();">Comments</a></li>
     </ul>
     <div class="form-group"> </div>
 </div>
@@ -57,12 +63,3 @@
       <footer>
         <p> <a href="/" style="color:#000;"> <h4 align="center" style=""> Photography </h4> </a> </p>
       </footer>    
-
-
-      <script>
-      var selector = '.nav li';
-        $(selector).on('click', function(){
-            $(selector).removeClass('active');
-            $(this).addClass('active');
-        });
-      </script>

@@ -22,7 +22,7 @@ html,body{
     background: image-url("css.jpg");
 }
 .li_color {
-  color: #000;
+  color: #fff;
 }
 footer {    
   position: fixed;
@@ -51,8 +51,8 @@ footer {
 }  
 .home_image
   {
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
   }
 
 .home_url li
@@ -77,5 +77,13 @@ footer {
   z-index: 40;
 }
 * {
-  font-family: "Arial Narrow";
+  font-family: "Shadows Into Light", Cursive;
+  font-weight: 400;
+ }
+ .logo_position
+ {
+  margin-top:1%;margin-bottom:1%;margin-left:10%;
+ }
+ .address > p {
+  color: #fff;
  }
