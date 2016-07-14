@@ -1,0 +1,10 @@
+<div class="col-md-4 col-md-offset-4">
+  <% if current_user.email.include?('admin@photography.com') %>
+    <%= simple_form_for(User.new, url: user_invitation_path) do |f| %>
+    <%= f.input :email, placeholder: 'Email', label: false %> <br>
+    <%= f.button :submit, 'Invite User', class: 'btn-primary' %>
+    <% end %>    
+  <% else %>
+    <p style="color:#000;"> You do not have access to invite user </p>
+  <% end %>
+</div>

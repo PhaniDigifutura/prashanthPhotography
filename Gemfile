@@ -10,9 +10,17 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'pg'
 
+gem 'simple_form'
+
 gem 'bootstrap-sass', '~> 3.3.1'
 
 gem 'autoprefixer-rails'
+
+gem 'devise',           '~> 3.5.2'
+
+gem 'devise_invitable', '~> 1.5.2'
+
+gem 'simple_form'
 
 gem 'pry-rails'
 # Use Uglifier as compressor for JavaScript assets
